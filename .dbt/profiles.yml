@@ -1,0 +1,14 @@
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      dataset: ivy_demo
+      job_execution_timeout_seconds: 300
+      impersonate_service_account: tdg-mrde-dev-geo-address@glo-eds-dlgaw-project-sbx.iam.gserviceaccount.com
+      job_retries: 1
+      location: asia-southeast1
+      priority: interactive
+      project: glo-eds-dlgaw-project-sbx
+      threads: 4
