@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    database: glo-eds-dlgaw-project-sbx
+    schema: ivy_demo
+    tables:
+      - name: raw_customers
+      - name: raw_orders
